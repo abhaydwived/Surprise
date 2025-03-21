@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Birthday Surprise</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.12.2/gsap.min.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="wish">Birthday wish with a message</div>
+        <div class="buttons">
+            <button onclick="showSection('chocolate')">Chocolate Letter</button>
+            <button onclick="showSection('song')">Song Letter</button>
+            <button onclick="showSection('memories')">Memories</button>
+            <button onclick="showSection('kuch')">Ek Return gift😅</button>
+        </div>
+    </div>
+
+    <div id="chocolate" class="section hidden">
+        <h2>Chocolate Letter</h2>
+        <div class="letter-container">
+            <h1>My Dear,<span class="choco" data-choco="Choco Pie"><img src="images/choco_pie.png" alt="Choco Pie"></span></h1>
+            <p>You are the <span class="choco" data-choco="Gems"><img src="images/gems.png" alt="Gems"></span>of my life.</p>
+            <p>Thank you for giving me love... I really want our relation to be as sweet as <span class="choco" data-choco="Dairy Milk"><img src="images/dairy_milk.png" alt="Dairy Milk"></span> .</p>
+            <p>Our love should never have a <span class="choco" data-choco="KitKat"><img src="images/kitkat.png" alt="KitKat"></span> break.</p>
+            <p>Today, I give you my heart for always maintaining the <span class="choco" data-choco="5 Star"><img src="images/5star.png" alt="5 Star"></span> connection between us.</p>
+            <p>And always bringing a <span class="choco" data-choco="Perk"><img src="images/perk.png" alt="Perk"></span> of happiness.</p>
+            <p>You take away all my worries just like <span class="choco" data-choco="Munch"><img src="images/munch.png" alt="Munch"></span>.</p>
+        </div>
+    </div>
+    
+    <div id="song" class="section hidden">
+        <header>  </header>
+        <div >
+            <p>🎶Aap Iss Letter Ko Padhe Usse Pehle 🎧</p>
+            <p>⚠️ Please wear your earphones and play the song before reading! 🎵</p>
+            
+            <audio id="song" src="chaar_kadam.mp3" controls> <button onclick= "toggleSong()"> Chaar Kadam</button></audio>
+           
+            
+            <h3>Heyi, Sarika ❤️</h3>
+            <p>Jaisa ki hum log lagbhag 4️⃣ Chaar Kadam saath chal chuke hai,</p>
+            <p>Toh kya tum mere saath apne life ke chaaro phase mei saath chalna chahogi? 🤗</p>
+            <p>Kya aap haath pakad ke mere saath ghumna chahengi? 🌍💑</p>
+            <p>I promise ki hum kabhi bhi tumhara haath nahi chhodenge toh kya aap apna haath mere haath mei dena chahengi.... for life time</p>
+            <p>Toh bolo, kya tum Chaar Kadam mere saath chalna psnd karogi? 💃🕺</p>
+            
+            <p>Vaise toh ye letter offline bhejne ka plan tha 📩</p>
+            <p>Par possible nahi ho paya, sorry</p>
+            <p>Par koi na, tumhare paas ye ese nahi toh online hi aa gaya 😌</p>
+            <p>Suno, mujhe pata hai ki tum bohot gussa ho</p>
+            <p>Hona bhi chahiye, mere karam hi kuch aise hai 🥲</p>
+            <p>Par kya tum please mujhe maaf kar sakti ho?</p>
+            <p>I promise ki kabhi chhod ke nahi jaayenge ese ab aur apka khayal rakhenge humesha🤞</p>
+            <p>Love you hamesha ❤️😘</p>
+            <p>Chalo accha ab aap gaane ke majje lijiye</p>
+        </div>
+    </div>
+    
+    <div id="memories" class="section hidden">
+        <h2>💖 Our Beautiful Memories 💖</h2>
+        
+        <div class="memory">
+            <h3>📅 18 Nov 2022</h3>
+            <p>Do you remember jab humari pahli baar baat hui thi? Tumhara pahla text "Hey!" Aur hum pagla se kya puchte hai - "Kya kr rahi ho?" 😂😂</p>
+        </div>
+        
+        <div class="memory">
+            <h3>📅 7 Dec 2022</h3>
+            <p>When we met first time aur hamara voh pahla handshake 🤝<br> Joki bhale hi matra 2-3 sec ka ho but accha tha, cute tha! ❤️</p>
+            <div class="handshake"></div>
+        </div>
+
+        <div class="memory">
+            <h3>📅 2 Jan 2023</h3>
+            <p>Isko toh nahi bhul sakte, but iske sabut mit gaye hai 😢 Toh hum laga nahi paayenge... Sry! But I love you more and more everyday! 💖</p>
+        </div>
+
+        <div class="memory">
+            <h3>📅 24 Jan 2023</h3>
+            <p>Jab hum logone hug kiya tha first time... Haaye that feeling! 🫂 Fir se hug krne ka mann kr raha hai 😅</p>
+            <div class="hug"></div>
+        </div>
+
+        <div class="memory">
+            <h3>📅 22 March 2023</h3>
+            <p>Tumhara 16th birthday, jab maine tumhe first time wish kiya... 🎂❤<br>
+               Happiest birthday my love! 💖😘❤🫂 You mean everything to me, and I can't imagine a life without you! ❤️<br>
+               I promise to keep you happy forever! 🫂❤</p>
+        </div>
+    </div>
+    
+    <div id="kuch" class="section hidden">
+        <h2>Return Gift</h2>
+        <p>Ones again Happy birthday to my future wife❤️🫂🫂</p>
+        <p class="return-gift">Bss ab at last hume ek return gift chahiye </p>
+            <p class="return-gift">jyada kuch nahi just a smile in your face bss itna bhut hai mere liye 🫂❤️</p>
+
+    </div>
+    
+    <script src="main.js"></script>
+</body>
+</html>
